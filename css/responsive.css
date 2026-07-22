@@ -1,0 +1,76 @@
+/* ==========================================================
+   DeepSeek AI Solutions
+   Responsive Stylesheet
+========================================================== */
+
+/* ---- Mobile nav toggle ---- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 3px;
+  transition: .3s;
+}
+
+/* ---- Tablets ---- */
+@media (max-width: 900px) {
+  .hero h1 { font-size: 40px; }
+  .hero p { font-size: 18px; }
+  section h2 { font-size: 32px; }
+  nav ul { gap: 18px; }
+  nav a { font-size: 14px; }
+  .logo h2 { font-size: 22px; }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+  .menu-toggle { display: flex; }
+
+  nav ul {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px 0;
+    gap: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    transform: translateY(-150%);
+    transition: transform .35s ease;
+    z-index: 998;
+  }
+
+  nav ul.open { transform: translateY(0); }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  nav ul li:last-child { border-bottom: none; }
+
+  .hero { padding: 80px 0; }
+  .hero h1 { font-size: 30px; }
+  .hero p { font-size: 16px; }
+  .buttons { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 80%; text-align: center; }
+  section { padding: 60px 0; }
+  section h2 { font-size: 26px; }
+  .about p { font-size: 17px; }
+  .card { padding: 25px; }
+  .card h3 { font-size: 20px; }
+  footer p { font-size: 14px; }
+}
