@@ -4,17 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeepSeek AI Solutions — AI Healthcare, RCM & Quality Expertise</title>
-  <meta
-    name="description"
-    content="DeepSeek AI Solutions helps healthcare organizations improve operations through AI strategy, Revenue Cycle Management expertise, healthcare quality support, and workflow modernization."
-  />
+  <meta name="description" content="DeepSeek AI Solutions helps healthcare organizations improve operations through AI strategy, Revenue Cycle Management expertise, healthcare quality support, and workflow modernization." />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --bg: #030712;
       --surface: #0f172a;
@@ -26,7 +18,6 @@
       --border: rgba(255, 255, 255, 0.08);
       --max: 1200px;
     }
-
     body {
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
@@ -36,259 +27,58 @@
       color: var(--text);
       line-height: 1.6;
     }
-
     nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 5%;
-      background: rgba(3, 7, 18, 0.75);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 5%; background: rgba(3, 7, 18, 0.75);
+      backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
     }
-
-    .logo {
-      font-size: 1.35rem;
-      font-weight: 700;
-    }
-
-    .logo span {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      align-items: center;
-    }
-
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    .hero {
-      padding: 6rem 5% 4rem;
-    }
-
-    .container {
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-
-    .hero-wrap {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 0.45rem 0.85rem;
-      border-radius: 999px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--secondary);
-      margin-bottom: 1.25rem;
-      font-size: 0.85rem;
-    }
-
-    h1 {
-      font-size: clamp(2.7rem, 6vw, 5rem);
-      line-height: 1.05;
-      margin-bottom: 1rem;
-    }
-
-    h1 span {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero p {
-      max-width: 640px;
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    .cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 1.4rem;
-      border-radius: 10px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
-    }
-
-    .btn-secondary {
-      border: 1px solid var(--border);
-      color: var(--text);
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--secondary);
-      color: var(--secondary);
-    }
-
-    .hero-panel {
-      min-height: 360px;
-      border-radius: 20px;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(6, 182, 212, 0.35), transparent 25%),
-        radial-gradient(circle at 70% 40%, rgba(37, 99, 235, 0.35), transparent 28%),
-        rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: 50%;
-      width: 180px;
-      height: 180px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #67e8f9, #2563eb 60%, #0f172a 100%);
-      box-shadow: 0 0 60px rgba(37, 99, 235, 0.3);
-    }
-
-    section {
-      padding: 4.5rem 5%;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .section-title h2 {
-      font-size: 2.3rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .section-title p {
-      color: var(--muted);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.6rem;
-      transition: 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(6, 182, 212, 0.45);
-    }
-
-    .card h3 {
-      margin-bottom: 0.75rem;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      color: var(--muted);
-    }
-
-    .about {
-      max-width: 820px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 2.3rem;
-      margin-bottom: 1rem;
-    }
-
-    .about p {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    footer {
-      padding: 3rem 5%;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer a {
-      color: var(--secondary);
-      text-decoration: none;
-    }
-
-    @media (max-width: 900px) {
-      .hero-wrap {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-      }
-
-      h1 {
-        font-size: 2.3rem;
-      }
-    }
+    .logo { font-size: 1.35rem; font-weight: 700; }
+    .logo span { background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
+    nav a { color: var(--muted); text-decoration: none; transition: color 0.2s ease; }
+    nav a:hover { color: var(--text); }
+    .hero { padding: 6rem 5% 4rem; }
+    .container { max-width: var(--max); margin: 0 auto; }
+    .hero-wrap { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center; }
+    .badge { display: inline-block; padding: 0.45rem 0.85rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); color: var(--secondary); margin-bottom: 1.25rem; font-size: 0.85rem; }
+    h1 { font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.05; margin-bottom: 1rem; }
+    h1 span { background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero p { max-width: 640px; color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem; }
+    .cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .btn { display: inline-block; padding: 0.9rem 1.4rem; border-radius: 10px; font-weight: 600; text-decoration: none; transition: 0.2s ease; }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25); }
+    .btn-secondary { border: 1px solid var(--border); color: var(--text); background: rgba(255, 255, 255, 0.03); }
+    .btn-secondary:hover { border-color: var(--secondary); color: var(--secondary); }
+    .hero-panel { min-height: 360px; border-radius: 20px; background: radial-gradient(circle at 30% 30%, rgba(6, 182, 212, 0.35), transparent 25%), radial-gradient(circle at 70% 40%, rgba(37, 99, 235, 0.35), transparent 28%), rgba(255, 255, 255, 0.04); border: 1px solid var(--border); position: relative; overflow: hidden; }
+    .hero-panel::before { content: ""; position: absolute; inset: 50%; width: 180px; height: 180px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle at 30% 30%, #67e8f9, #2563eb 60%, #0f172a 100%); box-shadow: 0 0 60px rgba(37, 99, 235, 0.3); }
+    section { padding: 4.5rem 5%; }
+    .section-title { text-align: center; max-width: 760px; margin: 0 auto 2.5rem; }
+    .section-title h2 { font-size: 2.3rem; margin-bottom: 0.75rem; }
+    .section-title p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: var(--max); margin: 0 auto; }
+    .card { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); border-radius: 16px; padding: 1.6rem; transition: 0.25s ease; }
+    .card:hover { transform: translateY(-3px); border-color: rgba(148, 163, 184, 0.6); }
+    .card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+    .card p { color: var(--muted); }
+    .about { max-width: 820px; margin: 0 auto; text-align: center; }
+    .about h2 { font-size: 2.3rem; margin-bottom: 1rem; }
+    .about p { color: var(--muted); font-size: 1.05rem; }
+    footer { padding: 3rem 5%; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.95rem; }
+    footer a { color: var(--secondary); text-decoration: none; }
+    @media (max-width: 900px) { .hero-wrap { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { nav ul { display: none; } h1 { font-size: 2.3rem; } }
   </style>
 </head>
 <body>
   <nav>
-    <div class="logo">Deep<span>Seek AI</span></div>
+    <div class="logo">DeepSeek <span>AI Solutions</span></div>
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -297,14 +87,14 @@
     <div class="container hero-wrap">
       <div>
         <span class="badge">AI-Powered Healthcare Expertise</span>
-        <h1>Transforming Healthcare with <span>Intelligent AI</span></h1>
+        <h1>Operational clarity for healthcare teams adopting <span>AI</span></h1>
         <p>
           DeepSeek AI Solutions helps healthcare organizations improve operations through AI strategy,
           Revenue Cycle Management expertise, healthcare quality support, and workflow modernization.
         </p>
         <div class="cta">
-          <a href="#services" class="btn btn-primary">Explore Services</a>
-          <a href="#contact" class="btn btn-secondary">Book a Consultation</a>
+          <a href="#services" class="btn btn-primary">View capabilities</a>
+          <a href="#contact" class="btn btn-secondary">Book a strategy call</a>
         </div>
       </div>
       <div class="hero-panel" aria-hidden="true"></div>
@@ -319,31 +109,18 @@
         and align healthcare workflows with smarter AI-supported execution.
       </p>
     </div>
-
     <div class="grid">
       <div class="card">
-        <h3>AI Healthcare Strategy</h3>
+        <h3>AI healthcare strategy</h3>
         <p>Identify practical AI opportunities, implementation priorities, and workflow modernization paths for healthcare organizations.</p>
       </div>
       <div class="card">
-        <h3>Revenue Cycle Management</h3>
+        <h3>Revenue cycle management</h3>
         <p>Improve operational clarity across claims, denials, follow-up workflows, and revenue optimization.</p>
       </div>
       <div class="card">
-        <h3>Healthcare Quality Expertise</h3>
+        <h3>Healthcare quality expertise</h3>
         <p>Support quality-focused operations, reporting, process improvement, and performance initiatives.</p>
-      </div>
-      <div class="card">
-        <h3>Workflow Intelligence</h3>
-        <p>Turn fragmented processes into structured systems with better visibility, support, and decision-making.</p>
-      </div>
-      <div class="card">
-        <h3>Thought Leadership Content</h3>
-        <p>Build authority through focused healthcare AI, RCM, and quality-centered brand content.</p>
-      </div>
-      <div class="card">
-        <h3>Custom Advisory Support</h3>
-        <p>Tailored consulting for healthcare teams exploring AI adoption, operational improvement, and growth strategy.</p>
       </div>
     </div>
   </section>
@@ -352,9 +129,8 @@
     <div class="about">
       <h2>Focused expertise, not generic AI hype</h2>
       <p>
-        DeepSeek AI Solutions brings together healthcare operations knowledge, Revenue Cycle Management expertise,
-        healthcare quality understanding, and practical AI strategy. The goal is to help healthcare organizations
-        build smarter workflows, stronger positioning, and more modern operational systems.
+        DeepSeek AI Solutions combines healthcare operations experience, revenue cycle management expertise,
+        healthcare quality work, and practical AI strategy to build smarter workflows and more modern operational systems.
       </p>
     </div>
   </section>
@@ -364,7 +140,7 @@
       <h2>About DeepSeek AI Solutions</h2>
       <p>
         We help healthcare teams connect AI potential with real operational outcomes. Instead of chasing trends,
-        we focus on usable systems, better processes, and measurable workflow improvement.
+        we focus on usable systems, better processes, and measurable workflow improvement that leadership can actually track.
       </p>
     </div>
   </section>
